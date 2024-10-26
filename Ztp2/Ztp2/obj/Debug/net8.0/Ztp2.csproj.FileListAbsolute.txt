@@ -1,0 +1,14 @@
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\bin\Debug\net8.0\Ztp2.exe
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\bin\Debug\net8.0\Ztp2.deps.json
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\bin\Debug\net8.0\Ztp2.runtimeconfig.json
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\bin\Debug\net8.0\Ztp2.dll
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\bin\Debug\net8.0\Ztp2.pdb
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.AssemblyInfoInputs.cache
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.AssemblyInfo.cs
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.csproj.CoreCompileInputs.cache
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.dll
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\refint\Ztp2.dll
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.pdb
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\Ztp2.genruntimeconfig.cache
+C:\Users\ulazk\OneDrive\Pulpit\ztp\Ztp2\Ztp2\obj\Debug\net8.0\ref\Ztp2.dll

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp1\\Ztp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF39781C-B274-4B59-909A-03D6DC4A0416}|Ztp1\\Ztp1.csproj|c:\\users\\ulazk\\onedrive\\pulpit\\ztp1\\ztp1\\ztp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF39781C-B274-4B59-909A-03D6DC4A0416}|Ztp1\\Ztp1.csproj|solutionrelative:ztp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF39781C-B274-4B59-909A-03D6DC4A0416}|Ztp1\\Ztp1.csproj|c:\\users\\ulazk\\onedrive\\pulpit\\ztp1\\ztp1\\ztp1\\ztp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF39781C-B274-4B59-909A-03D6DC4A0416}|Ztp1\\Ztp1.csproj|solutionrelative:ztp1\\ztp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ztp.cs",
+              "DocumentMoniker": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp1\\Ztp1\\Ztp1\\ztp.cs",
+              "RelativeDocumentMoniker": "Ztp1\\ztp.cs",
+              "ToolTip": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp1\\Ztp1\\Ztp1\\ztp.cs",
+              "RelativeToolTip": "Ztp1\\ztp.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAgwKMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:41:27.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp1\\Ztp1\\Ztp1\\Program.cs",
+              "RelativeDocumentMoniker": "Ztp1\\Program.cs",
+              "ToolTip": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp1\\Ztp1\\Ztp1\\Program.cs*",
+              "RelativeToolTip": "Ztp1\\Program.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvycAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:40:30.53Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

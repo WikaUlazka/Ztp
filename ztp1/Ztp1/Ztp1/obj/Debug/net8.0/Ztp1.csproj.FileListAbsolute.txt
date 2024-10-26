@@ -1,0 +1,14 @@
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\bin\Debug\net8.0\Ztp1.exe
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\bin\Debug\net8.0\Ztp1.deps.json
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\bin\Debug\net8.0\Ztp1.runtimeconfig.json
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\bin\Debug\net8.0\Ztp1.dll
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\bin\Debug\net8.0\Ztp1.pdb
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.AssemblyInfoInputs.cache
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.AssemblyInfo.cs
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.csproj.CoreCompileInputs.cache
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.dll
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\refint\Ztp1.dll
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.pdb
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\Ztp1.genruntimeconfig.cache
+C:\Users\ulazk\OneDrive\Pulpit\ztp1\Ztp1\Ztp1\obj\Debug\net8.0\ref\Ztp1.dll
