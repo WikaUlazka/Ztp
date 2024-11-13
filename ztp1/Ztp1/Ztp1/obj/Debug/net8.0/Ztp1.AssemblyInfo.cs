@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ztp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a87173b8e8fc71b8f7df0911e06c0d6b189fb67")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ztp1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ztp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

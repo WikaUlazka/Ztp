@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj": {}
+    "C:\\studia\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj": {
+    "C:\\studia\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj",
+        "projectUniqueName": "C:\\studia\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj",
         "projectName": "Ztp2",
-        "projectPath": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj",
+        "projectPath": "C:\\studia\\ztp\\Ztp2\\Ztp2\\Ztp2.csproj",
         "packagesPath": "C:\\Users\\ulazk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulazk\\OneDrive\\Pulpit\\ztp\\Ztp2\\Ztp2\\obj\\",
+        "outputPath": "C:\\studia\\ztp\\Ztp2\\Ztp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
