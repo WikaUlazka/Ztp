@@ -243,7 +243,7 @@ public class Program
 {
     public static void Main()
     {
-        User user = new User("Adam", UserRole.Guest);
+        User user = new User("Adam", UserRole.Admin);
 
         // Tworzymy instancję rzeczywistego serwisu
         INewsService newsService = new NewsServiceProxy(new NewsService(), user);
