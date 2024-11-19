@@ -38,12 +38,13 @@ public enum UserRole
     Admin
 }
 
-public class ProtectionNewsServiceProxy : INewsService
+public class NewsServiceProxy : INewsService
 {
     private readonly INewsService _newsService;
     private readonly User _user;
+    private static readonly Dictionary<int, Response> _cache = new Dictionary<int, Response>();
 
-    public ProtectionNewsServiceProxy(INewsService newsService, User user)
+    public NewsServiceProxy(INewsService newsService, User user)
     {
         _newsService = newsService;
         _user = user;
@@ -65,6 +66,7 @@ public class ProtectionNewsServiceProxy : INewsService
     {
         if (_user.Role == UserRole.Admin)
         {
+            ClearCache(id);
             return _newsService.DeleteMessage(id);
         }
         else
@@ -77,51 +79,13 @@ public class ProtectionNewsServiceProxy : INewsService
     {
         if (_user.Role == UserRole.Admin || _user.Role == UserRole.Moderator)
         {
+            ClearCache(id);
             return _newsService.EditMessage(id, newContent);
         }
         else
         {
             throw new UnauthorizedAccessException($"{_user.Role} does not have permission to edit message.");
         }
-    }
-
-    public Response ReadMessage(int id)
-    {
-        return _newsService.ReadMessage(id);
-
-
-    }
-}
-
-public class CacheNewsServiceProxy : INewsService
-{
-    private readonly INewsService _newsService;
-    private readonly User _user;
-    private static readonly Dictionary<int, Response> _cache = new Dictionary<int, Response>();
-
-
-    public CacheNewsServiceProxy(INewsService newsService, User user)
-    {
-        _newsService = newsService;
-        _user = user;
-    }
-
-    public Response AddMessage(string title, string content)
-    {
-        return _newsService.AddMessage(title, content);
-
-    }
-
-    public Response DeleteMessage(int id)
-    {
-        ClearCache(id);
-        return _newsService.DeleteMessage(id);
-    }
-
-    public Response EditMessage(int id, string newContent)
-    {
-        ClearCache(id);
-        return _newsService.EditMessage(id, newContent);
     }
 
     public Response ReadMessage(int id)
@@ -138,37 +102,6 @@ public class CacheNewsServiceProxy : INewsService
     private void ClearCache(int id)
     {
         _cache.Remove(id);
-    }
-}
-
-public class NewsServiceProxy : INewsService
-{
-    private readonly INewsService _newsService;
-    private readonly User _user;
-    public NewsServiceProxy(INewsService newsService, User user)
-    {
-        _newsService = new ProtectionNewsServiceProxy(new CacheNewsServiceProxy(newsService, user), user);
-        _user = user;
-    }
-
-    public Response AddMessage(string title, string content)
-    {
-        return _newsService.AddMessage(title, content);
-    }
-
-    public Response DeleteMessage(int id)
-    {
-        return _newsService.DeleteMessage(id);
-    }
-
-    public Response EditMessage(int id, string newContent)
-    {
-        return _newsService.EditMessage(id, newContent);
-    }
-
-    public Response ReadMessage(int id)
-    {
-        return _newsService.ReadMessage(id);
     }
 }
 
