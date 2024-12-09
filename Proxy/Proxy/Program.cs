@@ -176,7 +176,7 @@ public class Program
 {
     public static void Main()
     {
-        User user = new User("Adam", UserRole.Admin);
+        User user = new User("Adam", UserRole.User);
 
         // Tworzymy instancję rzeczywistego serwisu
         INewsService newsService = new NewsServiceProxy(new NewsService(), user);

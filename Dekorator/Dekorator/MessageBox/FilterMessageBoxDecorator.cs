@@ -1,7 +1,7 @@
-﻿public class FilterDecorator : BaseMessageBoxDecorator
+﻿public class FilterMessageBoxDecorator : BaseMessageBoxDecorator
 {
     private string _forbiddenWord;
-    public FilterDecorator(IMessageBox messageBox, string forbiddenWord) : base(messageBox)
+    public FilterMessageBoxDecorator(IMessageBox messageBox, string forbiddenWord) : base(messageBox)
     {
         _forbiddenWord = forbiddenWord;
     }
@@ -13,8 +13,7 @@
         {
             throw new Exception("Contains forbbiden word.");
         }
-        DateMessageDecorator newMessage = new DateMessageDecorator(message, DateTime.Now);
-        base.AddMessage(newMessage);
+        base.AddMessage(message);
     }
 
     public override IMessage GetMessageById(int id)

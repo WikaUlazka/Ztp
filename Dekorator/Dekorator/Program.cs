@@ -3,7 +3,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        IMessageBox messageBox = new FilterDecorator(new MessageBox(), "Lorem");
+        IMessageBox normalMessageBox = new MessageBox();
+        IMessageBox filterMessageBox = new ReadFlagMessageBoxDecorator(normalMessageBox);
+        IMessageBox dateMessageBox = new DateMessageBoxDecorator(filterMessageBox);
+        IMessageBox messageBox = new FilterMessageBoxDecorator(dateMessageBox, "lorem");
 
         // Dodanie przykładowych wiadomości
         messageBox.AddMessage(new Message("Powiadomienie o spotkaniu", "Spotkanie zespołu odbędzie się w piątek o godzinie 10:00."));
