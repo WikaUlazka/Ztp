@@ -11,10 +11,11 @@ public class MoveCommand : ICommand
     public ChessPiece ChessPiece { get; set; }
     public required ChessBoard ChessBoard { get; set; }
 
-    public void Execute()
+    public bool Execute()
     {
         ChessPiece = ChessBoard.GetPiece(EndRow, EndCol);
-        ChessBoard.MovePiece(StartRow, StartCol, EndRow, EndCol);
+        return ChessBoard.MovePiece(StartRow, StartCol, EndRow, EndCol);
+
     }
 
     public void Undo()

@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Chess
+﻿namespace Chess
 {
     public partial class ChessBoardControl : Control
     {
         public ChessBoard? ChessBoard { get; set; } // Odwołanie do obiektu ChessBoard
+        public CommandManager CommandManager { get; set; }
 
         private int tileSize = 60; // Rozmiar pojedynczego pola
         private int offsetX;    // Przesunięcie szachownicy w poziomie
@@ -195,8 +186,18 @@ namespace Chess
 
                     if (ChessBoard?.GetPiece(fromRow, fromCol) != null)
                     {
+                        var moveCommand = new MoveCommand()
+                        {
+                            ChessBoard = ChessBoard,
+                            EndCol = col,
+                            EndRow = row,
+                            StartCol = fromCol,
+                            StartRow = fromRow,
+                        };
+
+
                         // Przesunięcie figury
-                        if (ChessBoard.MovePiece(fromRow, fromCol, row, col))
+                        if (CommandManager.Move(moveCommand))
                         {
                             selectedTile = null; // Anuluj zaznaczenie po wykonaniu ruchu
                         }

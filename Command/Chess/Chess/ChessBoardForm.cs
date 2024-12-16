@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Chess
+﻿namespace Chess
 {
     public partial class ChessBoardForm : Form
     {
+        private CommandManager commandManager = new CommandManager();
+
         private readonly ChessBoard board; // Instancja szachownicy
         private const string defaultNotation = @"
             ra8 nb8 bc8 qd8 ke8 bf8 ng8 rh8
@@ -24,31 +16,38 @@ namespace Chess
             InitializeComponent();
 
             // Tworzenie i inicjalizacja szachownicy
-            board = new ChessBoard();
+            board = new ChessBoard(commandManager);
             board.InitializeFromString(defaultNotation);
 
             // Przekazanie szachownicy do wyświetlającej ją kontrolki
             chessBoardControl.ChessBoard = board;
+            chessBoardControl.CommandManager = commandManager;
+
         }
 
         private void undoButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not implemented yet!");
+            commandManager.Undo();
+            chessBoardControl.Invalidate();
         }
 
         private void redoButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not implemented yet!");
+            commandManager.Redo();
+            chessBoardControl.Invalidate();
         }
 
         private void replayButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not implemented yet!");
+            commandManager.Replay(chessBoardControl);
+            chessBoardControl.Invalidate();
         }
 
         private void resetButton_Click(object sender, EventArgs e)
         {
             board.InitializeFromString(defaultNotation);
+            commandManager = new CommandManager();
+            chessBoardControl.CommandManager = commandManager;
             chessBoardControl.Invalidate();
         }
     }

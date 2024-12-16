@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Chess
 {
@@ -11,11 +7,13 @@ namespace Chess
     // Umożliwia ustawianie, usuwanie i przesuwanie figur na planszy.
     public class ChessBoard
     {
+        private CommandManager _commandManager;
         private readonly ChessPiece[,] board;
 
-        public ChessBoard()
+        public ChessBoard(CommandManager commandManager)
         {
             board = new ChessPiece[8, 8];
+            _commandManager = commandManager;
         }
 
         // Zwraca figurę na podanym polu.
